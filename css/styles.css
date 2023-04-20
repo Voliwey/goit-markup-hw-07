@@ -378,8 +378,7 @@ a {
 
 .mobil-social-contact {
   display: flex;
-  width: 40px;
-  height: 40px;
+  padding: 8px;
   background-color: #4d5ae5;
   border-radius: 50%;
   align-items: center;
@@ -388,6 +387,22 @@ a {
 }
 .icon-mobil-social {
   fill: #f4f4fd;
+}
+.window-tel {
+  color: #4d5ae5;
+}
+.window-mailto {
+  color: #434455;
+}
+.mobil-social-contact:hover,
+.mobil-social-contact:focus {
+  background-color: #404bbf;
+}
+.mobil-hover-x:hover,
+.mobil-hover-x:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
+  border-color: #404bbf;
 }
 
 /* -------------------------------------------адаптив------------------------------------------- */
@@ -828,7 +843,8 @@ a {
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
-
+  transition: background-color 250ms var(--time-func),
+    fill 250ms var(--time-func), border 250ms var(--time-func);
   fill: #2e2f42;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
