@@ -178,10 +178,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 16px;
+  justify-content: center;
 }
 .company-team {
   display: flex;
   height: 100%;
+  width: 190px;
   align-items: center;
   justify-content: center;
   border: 1px solid #8e8f99;
@@ -491,6 +493,9 @@ a {
   .footer-container-item {
     display: flex;
   }
+  .company-team {
+    width: 168px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -509,9 +514,9 @@ a {
     margin-bottom: 72px;
   }
 
-  .company-team-list {
+  /* .company-team-list {
     flex-basis: calc((100% - 24px) / 2);
-  }
+  } */
   .logo-fontfooter {
     display: block;
     text-align: center;
@@ -558,6 +563,12 @@ a {
   }
   .button-secondpage {
     padding: 8px 16px;
+  }
+  .future-title {
+    text-align: center;
+  }
+  .button {
+    justify-content: start;
   }
 }
 
@@ -692,7 +703,7 @@ a {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
   .work-section {
     margin-top: -120px;
@@ -789,7 +800,6 @@ a {
     row-gap: 72px;
     column-gap: 24px;
     justify-content: start;
-    margin: -3px;
   }
 }
 
@@ -881,7 +891,7 @@ a {
 
 .mobile-social-container {
   display: flex;
-  justify-content: space-between;
+  gap: 56px;
 }
 /* ----------------------мобил хеадер с меню--------------------------- */
 
@@ -910,7 +920,7 @@ a {
 .hero {
   background-color: var(--color-texth);
   padding: 112px 0;
-  max-width: 100%;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -979,6 +989,7 @@ a {
       url(../img/office@2x.jpg);
   }
 }
+/*------------------------------------- main-hero--------------------------------------- */
 
 /* ------------------------------------backdrop - modal---------------------------------------- */
 .backdrop {
